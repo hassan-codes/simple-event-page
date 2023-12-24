@@ -76,18 +76,38 @@ a {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: 0px auto;
+  margin: 10px auto;
   @media only screen and (min-width: 64em) {
     width: 90%;
+  }
+
+  p {
+    line-height: 1.5em;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
   }
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  border: 2px solid #000;
+  flex: 1;
+  margin: 0 15px;
 }
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    border: 1px solid $darkgrey; 
+    padding: 8px; 
+    text-align: center; 
+  }
+
+  th {
+    font-weight: bold; /* Make table headers bold */
+  }
+}
+
 
 .page-header {
   border-bottom: 1px solid $lightgrey;

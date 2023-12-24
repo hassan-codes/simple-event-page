@@ -67,20 +67,35 @@ a:hover {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: 0px auto;
+  margin: 10px auto;
 }
 @media only screen and (min-width: 64em) {
   .hymn-section {
     width: 90%;
   }
 }
+.hymn-section p {
+  line-height: 1.5em;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+}
 
 .box {
   flex: 1;
-  height: 100px;
-  background-color: red;
-  border: 2px solid #000;
-  margin: 0 5px;
+  margin: 0 15px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.custom-table th, .custom-table td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+}
+.custom-table th {
+  font-weight: bold; /* Make table headers bold */
 }
 
 .page-header {
